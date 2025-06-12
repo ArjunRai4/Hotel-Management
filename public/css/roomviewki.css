@@ -1,0 +1,221 @@
+body{
+    margin:0;
+}
+*{
+    text-decoration: none;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.navbar{
+    background: white;font-family:"Pacifico",cursive;padding-right: 50px;position:fixed;width:100%;z-index: 100;
+    padding-left: 150px;box-shadow: 0px 5px 5px rgb(55, 55, 55);padding-top: 0px;padding-bottom: 0px;
+}
+.navdiv{
+    display: flex;align-items: center;justify-content: space-between;
+}
+.logo a{
+    font-size: 20px;font-weight: 400;color:black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    font-size: 15px;font-weight: bold;margin-right: 25px;
+}
+.intro{
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+.intro h2{
+    font-size: 2rem;
+    margin:0 ;
+
+}
+.x{
+    font-size: large;
+    
+}
+.lr{
+    display: flex;
+    justify-content: center;
+    
+}
+.intro .lr .left img{
+    height: 23rem;
+     width: 38vw;
+}
+.right {
+     padding:2rem;
+}
+.content{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.storeinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lsi{
+     width: 50%;
+     font-weight: bold;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rsi{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    width: 50%;
+}
+.items1{
+    font-size: x-large;
+}
+.gallaryword{
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+.roomsubmit{
+    background-color: #b2710fb7;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+a:visited {
+    color: black;
+  }
+ .s{
+    font-size: xx-large;
+    font-weight: 300;
+}
+.amen{
+    display: flex;
+    justify-content: center;
+}
+.listd{
+    display: flex;
+   font-size: x-large;
+   flex-direction: column;
+   justify-content: space-between;
+   color: rgb(128, 128, 128);
+}
+.hea{
+    font-size: xx-large;
+}
+.footer {
+    background-color: #2d4863;
+    padding: 0px 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.container {
+    max-width: 1200px;
+    
+}
+.footer-content {
+    margin-top: 55px;
+    margin-left: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+        
+.facility, .contact-info, .social-media {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.facility h3, .contact-info h3, .social-media h3 {
+    font-size: 20px;
+    color: #fffefe;
+    margin-bottom: 15px;
+}
+.facility p, .contact-info p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #c8c3c3;
+}
+        
+.social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.social-media ul li a {
+    color: #c9c5c5;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+    
+.social-media ul li a:hover {
+    color: #007bff;
+}
+.resort-info {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.resort-info h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.resort-info ul {
+    font-size: 20px;
+list-style-type: none;
+    padding: 0;
+}    
+.resort-info li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.resort-info li:before {
+    content: '\2022';
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+.foot{
+    height: 4rem;
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-size: 1.5rem; 
+}
+.gallaryphoto{
+    height: 17rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+} 
+.photo{
+    height: 14rem;
+    width: 100%;
+}
+.photocontainer{
+    width: 25%;
+    height:100%;
+}

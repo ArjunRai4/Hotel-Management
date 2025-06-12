@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vrview{
+    margin: 20px auto;
+    height: 500px;
+    width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    height: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    margin: 12px auto;
+}

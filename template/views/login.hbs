@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginki.css">
+</head>
+<body>
+    <div class="vid-container">
+        <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
+            <source src="https://videos.pexels.com/video-files/19247660/19247660-uhd_3840_2160_60fps.mp4" type="video/webm">
+        </video>
+        <div class="inner-container">
+          <video class="bgvid inner" autoplay="autoplay" muted="muted" preload="auto" loop>
+            <source src="https://videos.pexels.com/video-files/19247660/19247660-uhd_3840_2160_60fps.mp4?random=1" type="video/webm">
+          </video>
+          <div class="box">
+            <form action="/login" method="post">
+            <h1>Login</h1>
+            <input type="text" placeholder="email" name="email" required/>
+            <input type="password" placeholder="Password" name="password" required/>
+            {{#if fill}}
+               <p class="invalid-credentials">{{fill}}</p>
+             {{/if}}
+            <button name="submit">Login</button>
+            <p>Not a member? <span><a href="signin">Sign Up</a></span></p>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

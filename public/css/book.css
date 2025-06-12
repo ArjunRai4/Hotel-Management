@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #fff3e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-badge {
+  background-color: #feb73c;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.auth-buttons a,
+.nav-btn {
+  background-color: #feb73c;
+  padding: 8px 14px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover,
+.auth-buttons a:hover {
+  background-color: #e6a830;
+}
+
+.booking-form {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.input-group > div {
+  flex: 1;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+/* Add this to your existing book.css */
+@media (max-width: 600px) {
+  .booking-form {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .auth-buttons, .user-badge, .nav-btn {
+    margin-top: 10px;
+  }
+}

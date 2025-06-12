@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/book.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <title>XYZ Hotels Booking</title>
+</head>
+<body>
+  <header class="nav-header">
+    {{#if isSignedIn}}
+      <span class="user-badge">{{username}}</span>
+      <form action="/logout" method="GET"><button type="submit" class="nav-btn">Log Out</button></form>
+    {{else}}
+      <div class="auth-buttons">
+        <a href="/signin" class="nav-btn">Sign Up</a>
+        <a href="/login" class="nav-btn">Login</a>
+      </div>
+    {{/if}}
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <h2>Book Your Stay</h2>
+      <form action="/book" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required maxlength="100" placeholder="Enter your name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+
+        <div class="input-group">
+          <div><label for="check-in">Check-in:</label><input type="date" id="check-in" name="checkIn" required /></div>
+          <div><label for="check-out">Check-out:</label><input type="date" id="check-out" name="checkOut" required /></div>
+        </div>
+
+        <div class="input-group">
+          <div><label for="rooms">Rooms:</label><input type="number" id="rooms" name="rooms" min="1" max="5" required /></div>
+          <div><label for="guests">Guests:</label><input type="number" id="guests" name="guests" min="1" required /></div>
+        </div>
+
+        <div class="totalAmount">Total: ₹0</div>
+        <button type="submit" class="btn-primary">Pay Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 XYZ Hotels. All rights reserved.</p>
+  </footer>
+  <script src="/js/bookki.js"></script>
+</body>
+</html>

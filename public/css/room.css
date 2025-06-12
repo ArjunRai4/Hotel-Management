@@ -1,0 +1,258 @@
+body{
+    margin:0;
+}
+*{
+    text-decoration: none;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.navbar{
+    background: white;font-family:"Pacifico",cursive;padding-right: 50px;position:fixed;width:100%;z-index: 100;
+    padding-left: 150px;box-shadow: 0px 5px 5px rgb(55, 55, 55);padding-top: 0px;padding-bottom: 0px;
+}
+.navdiv{
+    display: flex;align-items: center;justify-content: space-between;
+}
+.logo a{
+    font-size: 20px;font-weight: 400;color:black;
+}
+li{
+    list-style: none;display: inline-block;
+}
+li a{
+    font-size: 15px;font-weight: bold;margin-right: 25px;
+}
+.back_animation{
+    width: auto;height: 700px;
+    background-image: url(../images/villa3.jpg);background-repeat: no-repeat; background-size: cover;
+    background-position: center;
+    animation: animation 12s infinite;
+    animation-timing-function:ease-in-out;
+}
+@keyframes animation {
+    0%{
+        background-image: url(../images/villa3.jpg);
+    }
+    25%{
+        background-image: url(../images/villa.jpg);
+    }
+    75%{
+        background-image: url(../images/villa2.jpg);
+    }
+    100%{
+        background-image: url(../images/villa3.jpg);
+    }
+}
+.display-container{
+    margin:0px;
+    padding: 0px;
+}
+.displayvilla{
+    width:100vw;
+    height:100vh;
+}
+.check{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    position:relative;
+    top: -25px;
+    width:75%;
+    background-color: rgba(245, 245, 245, 0.892);
+    box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgb(4, 4, 35);
+    
+}
+.items{
+    display:flex;
+    gap:4rem;
+    margin-right: 1rem;
+}
+.checkinout{
+    display: flex;
+    border-right: 2px rgb(97, 180, 210) solid;
+    display: flex;
+    gap: 2rem;
+    margin-right: rem;
+    font-size: 1.3rem;
+}
+.roombar{
+    font-size: 1.3rem;
+    margin: 0rem 1rem 0rem 1rem;
+    border-right: 2px rgb(97, 180, 210) solid;
+    display: flex;
+    gap:2rem;
+}
+.roombar2{
+    margin-right: 1rem;
+}
+.guestbar{
+    font-size: 1.3rem;
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    gap:2rem;
+}
+#para1{
+ margin-top: -1.5rem;
+}
+
+.heading-container{
+    margin-left: 9rem
+}
+.head1{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+#para2{
+    font-size: 1.6rem;
+}
+.content-container{
+    background-color: rgba(209, 217, 217, 0.163);
+    width:98.9vw;
+    box-sizing: border-box;
+}
+.roompic{
+    margin:auto;
+    width:82%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap:5rem;
+}
+.roompic1{
+    display: flex;
+
+}
+.roompic12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    font-size:1.3rem;
+    width: 30rem;
+    height: 21rem;
+    padding: 2rem;
+    transform: translate(-100px,70px);
+}
+.roompic11{
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+.roompic11:hover{
+    transform: scale(1.2);
+}
+.roompic11:hover + .roompic12 {
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    transform: translate(70px,70px);
+}
+.foot{
+    height: 4rem;
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-size: 1.5rem; 
+}
+.footer {
+    background-color: #2d4863;
+    padding: 0px 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.container {
+    max-width: 1200px;
+    
+}
+.footer-content {
+    margin-top: 55px;
+    margin-left: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+        
+.facility, .contact-info, .social-media {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.facility h3, .contact-info h3, .social-media h3 {
+    font-size: 20px;
+    color: #fffefe;
+    margin-bottom: 15px;
+}
+.facility p, .contact-info p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #c8c3c3;
+}
+        
+.social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.social-media ul li a {
+    color: #c9c5c5;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+    
+.social-media ul li a:hover {
+    color: #007bff;
+}
+.resort-info {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.resort-info h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.resort-info ul {
+    font-size: 20px;
+list-style-type: none;
+    padding: 0;
+}    
+.resort-info li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.resort-info li:before {
+    content: '\2022';
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+.roomsubmit{
+    background-color: #0f35b2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    margin: -2px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+a:visited {
+    color: black;
+  }
+   
+
